@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            width: 100vw;
+        }
+        .logo{
+        margin-left: 200px;
+        }
+      .Login{
+         border:solid rgb(253, 249, 249);
+         width: 100px;
+         height: 30px;
+         margin-left: 150px;
+         margin-top: 7px;
+         background-color: white;
+         display: flex;
+         justify-content: center;
+         align-content: center;
+        padding-top: 5px;
+      }
+      .Login a{
+          text-decoration: none;
+          color: #2874f0;
+      }
+      .menu a{
+          /* display: block; */
+          background-color: aliceblue;
+          color: black;
+          text-decoration: none;
+          display: block;
+      }
+      .menu{
+          margin-top: 15px;
+          /* background-color: black; */
+          display: none;
+          position: absolute;
+          width: 160px;
+          z-index: -1;
+      }
+      
+      .link{
+          height: 50px;
+          width: 150px;
+      }
+      .menu-button{
+            background-color: #2874f0;
+            color: white;
+            font-size: 20px;
+            border: none;
+
+        }
+         .more:hover .menu {
+         display: block;
+        } 
+
+        .cart{
+            margin-left: 15px;
+            margin-top: 17px;
+            background-color: #2874f0;
+           
+        }
+
+        .cart a{
+            text-decoration: none;
+            color: white;
+            margin-top: 2px;
+        }
+
+        #search{
+          display: inline-block;
+          /* margin: auto; */
+          width: 500px;
+          height:30px;
+          border-radius: 5px;
+          margin-top: 10px;
+          margin-left: 20px;
+        }
+        .more{
+            background-color: #2874f0;
+            color: white;
+            width: 100px;
+            border:  white;
+            margin-left: 100px;
+            margin-top: 15px
+        }
+        
+        header{
+            height:50px ;
+            background-color: #2874f0;
+            display: flex;
+            /* justify-content: center; */
+        }
+
+        /* main styling   */
+        .main{
+            border: solid black;
+         height: 529px;
+         width: 100vw;
+     }
+        .animate{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+
+            /* background-color: aliceblue; */
+            animation: to-fro 3s ease-in-out 1s infinite alternate;
+
+        }
+        #moving-image{
+            width: 250px;
+            border-radius: 50px;
+        }
+
+        @keyframes to-fro {
+            from{
+                width: 300px
+            }
+
+            to{
+                width: 400px;
+            }
+        }    
+        .slider{
+            width: 100vw;
+            height: 350px;
+            background-color: #82a8e6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    .slider-images{
+        width: 900px;
+        height: 300px;
+        border: solid black;
+    }
+
+
+    /* items  */
+    .item{
+        margin-top: 40px;
+        height: 100px;
+        width: 100vw;
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+    }
+    .item-image{
+        margin-top: 5px;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+
+    }
+    .item-text{
+        color: white;
+    }
+    .item-image-div{
+    margin-top: 8px;
+    }
+
+    /* deal of the day section 
+     */
+
+     .deal-section{
+         display: flex;
+         flex-direction: column;
+         margin-top: 15px;
+         background-color: whitesmoke;
+         /* border: solid black; */
+         /* height: 900px; */
+         width: 100vw;
+    margin-left: 0px;
+    margin-right: 0px;
+    row-gap: 10px;
+
+     }
+     .deal-all-images{
+
+         display: flex;
+         justify-content: space-around;
+         margin-top: 10px;
+         /* border:solid slateblue; */
+         width: 100%;
+         height: 350px;
+         background-color: whitesmoke;
+     }
+
+     .deal-images-styling{
+         margin-top: 50px;
+         flex-wrap: wrap;
+        /* border:solid brown; */
+         /* display: flex; */
+         /* flex-direction: column; */
+         width: 200px;
+         height: 300px;
+         justify-content: center;
+         align-items: center;
+     }
+
+    .deal-image{
+        height: 150px;
+        width: 150px;
+        border-radius: 5px;
+    }
+    .deal-image:hover{
+     /* animation: hovering 1 ease-in  infinite normal ; */
+     transform: scale(1.1);
+    }
+    
+    .deal-heading{
+        display: inline;
+    }
+
+
+    .deal-a{
+        text-decoration: none;
+        color: black;
+    }
+    .deal-a:hover{
+        color: #2874f0;
+    }
+    footer{
+        background-color: rgb(18, 18, 51);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+        margin: 0px;
+        color: wheat;
+    }
+  
+    </style>
+</head>
+<body>
+
+ <!-- header section start  -->
+    <header>    `
+    <img src="https://www.freepnglogos.com/uploads/flipkart-logo-png/logo-of-flipkart-icube-portable-ice-maker-latest-model-7.png" class="logo"  width="100px" alt="">
+
+   <input type="text" name="" id="search" placeholder="Search For Product Brand And More">
+
+   <div class="Login">
+    <a href="https://www.flipkart.com/" >Login</a>
+</div>
+
+    <div class="more">
+     <button class="menu-button">More</button>
+  <div class="menu"><a href="" class="link">More</a>
+    <a href=""  class="link">Notification Preference</a>
+    <a href=""  class="link">Sell on flipkart</a>
+    <a href=""  class="link">Advertise</a>
+</div>
+</div>
+
+  <div class="cart">
+      <a href="">Cart</a>
+  </div>
+    </header>
+<!-- header end  -->
+
+    <!-- item section  -->
+<div class="item">
+   <div class="item-image-div">
+    <img src="https://www.forbes.com/uk/advisor/wp-content/uploads/2020/11/phones-switch-apps.jpg" class="item-image"alt="">
+    <p class="item-text">phones</p>
+   </div>
+
+   <div class="item-image-div">
+    <img src="https://media.istockphoto.com/photos/groceries-picture-id171302954?k=20&m=171302954&s=612x612&w=0&h=kDpFXA8IoG22Uxog3YUmWvzBRzwyibd6r4S2v5z-Mno=" class="item-image"alt="">
+    <p class="item-text">Grocery</p>
+   </div>
+
+   <div class="item-image-div">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwiLdlpogoIqb784-rj3XFi-zrcvI7QsX6kg&usqp=CAU" class="item-image"alt="">
+    <p class="item-text">Fashion</p>
+   </div>
+
+   <div class="item-image-div">
+    <img src="https://www.enationalelectronics.com/assets/images/slider4.jpg" class="item-image"alt="">
+    <p class="item-text">Electronics</p>
+   </div>
+
+   <div class="item-image-div">
+    <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/Home-Centre/Test-UI/Modular1-Block_ONEThree-1-Mobile-19Nov2021.jpg" class="item-image"alt="">
+    <p class="item-text">Home</p>
+   </div>
+
+   <div class="item-image-div">
+    <img src="https://3.imimg.com/data3/QT/CE/MY-6294543/bedroom-furniture-online-shopping-home-furnishing-stores-500x500.png" class="item-image"alt="">
+    <p class="item-text">Appliances</p>
+   </div>
+
+   <div class="item-image-div">
+    <img src="https://media.istockphoto.com/vectors/travel-and-camping-items-vector-set-vector-id1305270742" class="item-image"alt="">
+    <p class="item-text">Travel</p>
+   </div class="item-image-div">
+
+   <div class="item-image-div">
+    <img src="https://m.media-amazon.com/images/I/519e+QdXDPL.jpg" class="item-image"alt="">
+    <p class="item-text">Toys</p>
+   </div>
+
+   <!-- <div>
+    <img src="https://www.forbes.com/uk/advisor/wp-content/uploads/2020/11/phones-switch-apps.jpg" class="item-image"alt="">
+    <p class="item-text">phones</p>
+   </div> -->
+   
+</div>
+<!-- item section end  -->
+
+
+<!-- main section start  -->
+<main class="main">
+ <div class="animate">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjU_hjW_qVH5kyarKE7hrUvxXBnT63_eoSYQ&usqp=CAU"  id="moving-image" alt="">
+    </div>
+
+    <div class="slider">
+   <img src="image1.jpeg" class="slider-images" id="image1" alt="">
+   <img src="image2.jpg" class="slider-images" id="image2" alt="">
+   <img src="image3.jpg" class="slider-images" id="image3" alt="">
+
+    </div>
+</main>
+
+<div class="deal-section">
+
+    <h2 class="deal-heading ">Deal of the day</h2>
+
+    <div class="deal-all-images">
+    
+        <div class="deal-images-styling">
+         <img src="https://static3.azafashions.com/tr:w-317/uploads/product/verve-abshrt056-0299011001616251438.jpg" class="deal-image" alt=""> -->
+          <a href="https://www.flipkart.com/" class="deal-a">  starting from “₹” 299</a>
+        </div>
+
+        <div class="deal-images-styling">
+            <img src="https://asset20.ckassets.com/blog/wp-content/uploads/sites/5/2020/01/amazon-great-indian-sale.jpg" class="deal-image" alt=""> -->
+             <a href="https://www.flipkart.com/" class="deal-a">  starting from “₹” 399</a>
+           </div>
+
+           <div class="deal-images-styling">
+            <img src="https://static.toiimg.com/thumb/resizemode-4,msid-87234192,width-1200,height-900/87234192.jpg" class="deal-image" alt=""> -->
+             <a href="https://www.flipkart.com/" class="deal-a">  starting from “₹” 499</a>
+           </div>
+
+           <div class="deal-images-styling">
+            <img src="https://www.punjabandesigner.com/wp-content/uploads/2019/10/buy-heavy-salwar-suits-online-india.jpg" class="deal-image" alt=""> -->
+             <a href="https://www.flipkart.com/" class="deal-a">  starting from “₹” 499</a>
+           </div>
+
+
+           <div class="deal-images-styling">
+            <img src="https://media.gq.com/photos/614a45ca9153fbeebf517e4c/16:9/w_2580,c_limit/watch-sale.jpg" class="deal-image" alt=""> -->
+             <a href="https://www.flipkart.com/" class="deal-a">  starting from “₹” 599</a>
+           </div>
+
+           <div class="deal-images-styling">
+            <img src="https://image.shutterstock.com/image-photo/hall-shopping-center-shop-digital-260nw-1445581070.jpg" class="deal-image" alt=""> -->
+             <a href="https://www.flipkart.com/" class="deal-a"> starting from “₹” 699</a>
+           </div>
+
+           <div class="deal-images-styling">
+            <img src="https://images.herzindagi.info/image/2020/Jan/cook-ware-sale-amazon.jpg" class="deal-image" alt=""> -->
+             <a href="https://www.flipkart.com/" class="deal-a">  starting from “₹” 899</a>
+           </div>
+    </div>
+
+    
+    <!-- second-box  -->
+    <h1 class="deal-heading ">Tops Pics Of Clothes</h1>
+    <div class="deal-all-images">
+ 
+        <div class="deal-images-styling">
+         <img src="https://static3.azafashions.com/tr:w-317/uploads/product/verve-abshrt056-0299011001616251438.jpg" class="deal-image" alt=""> -->
+          <a href="https://www.flipkart.com/" class="deal-a">  starting from “₹” 299</a>
+        </div>
+
+        <div class="deal-images-styling">
+            <img src="https://asset20.ckassets.com/blog/wp-content/uploads/sites/5/2020/01/amazon-great-indian-sale.jpg" class="deal-image" alt=""> -->
+             <a href="https://www.flipkart.com/" class="deal-a">  starting from “₹” 399</a>
+           </div>
+
+           <div class="deal-images-styling">
+            <img src="https://static.toiimg.com/thumb/resizemode-4,msid-87234192,width-1200,height-900/87234192.jpg" class="deal-image" alt=""> -->
+             <a href="https://www.flipkart.com/" class="deal-a">  starting from “₹” 499</a>
+           </div>
+
+           <div class="deal-images-styling">
+            <img src="https://www.punjabandesigner.com/wp-content/uploads/2019/10/buy-heavy-salwar-suits-online-india.jpg" class="deal-image" alt=""> -->
+             <a href="https://www.flipkart.com/" class="deal-a">  starting from “₹” 499</a>
+           </div>
+
+
+           <div class="deal-images-styling">
+            <img src="https://media.gq.com/photos/614a45ca9153fbeebf517e4c/16:9/w_2580,c_limit/watch-sale.jpg" class="deal-image" alt=""> -->
+             <a href="https://www.flipkart.com/" class="deal-a">  starting from “₹” 599</a>
+           </div>
+
+           <div class="deal-images-styling">
+            <img src="https://image.shutterstock.com/image-photo/hall-shopping-center-shop-digital-260nw-1445581070.jpg" class="deal-image" alt=""> -->
+             <a href="https://www.flipkart.com/" class="deal-a"> starting from “₹” 699</a>
+           </div>
+
+           <div class="deal-images-styling">
+            <img src="https://images.herzindagi.info/image/2020/Jan/cook-ware-sale-amazon.jpg" class="deal-image" alt=""> -->
+             <a href="https://www.flipkart.com/" class="deal-a">  starting from “₹” 899</a>
+           </div>
+    </div>
+    
+    <h1 class="deal-heading ">5G Phones In market</h1>
+    <div class="deal-all-images">
+        <div class="deal-images-styling">
+         <img src="https://static3.azafashions.com/tr:w-317/uploads/product/verve-abshrt056-0299011001616251438.jpg" class="deal-image" alt=""> -->
+          <a href="https://www.flipkart.com/" class="deal-a">  starting from “₹” 299</a>
+        </div>
+
+        <div class="deal-images-styling">
+            <img src="https://asset20.ckassets.com/blog/wp-content/uploads/sites/5/2020/01/amazon-great-indian-sale.jpg" class="deal-image" alt=""> -->
+             <a href="https://www.flipkart.com/" class="deal-a">  starting from “₹” 399</a>
+           </div>
+
+           <div class="deal-images-styling">
+            <img src="https://static.toiimg.com/thumb/resizemode-4,msid-87234192,width-1200,height-900/87234192.jpg" class="deal-image" alt=""> -->
+             <a href="https://www.flipkart.com/" class="deal-a">  starting from “₹” 499</a>
+           </div>
+
+           <div class="deal-images-styling">
+            <img src="https://www.punjabandesigner.com/wp-content/uploads/2019/10/buy-heavy-salwar-suits-online-india.jpg" class="deal-image" alt=""> -->
+             <a href="https://www.flipkart.com/" class="deal-a">  starting from “₹” 499</a>
+           </div>
+
+
+           <div class="deal-images-styling">
+            <img src="https://media.gq.com/photos/614a45ca9153fbeebf517e4c/16:9/w_2580,c_limit/watch-sale.jpg" class="deal-image" alt=""> -->
+             <a href="https://www.flipkart.com/" class="deal-a">  starting from “₹” 599</a>
+           </div>
+
+           <div class="deal-images-styling">
+            <img src="https://image.shutterstock.com/image-photo/hall-shopping-center-shop-digital-260nw-1445581070.jpg" class="deal-image" alt=""> -->
+             <a href="https://www.flipkart.com/" class="deal-a"> starting from “₹” 699</a>
+           </div>
+
+           <div class="deal-images-styling">
+            <img src="https://images.herzindagi.info/image/2020/Jan/cook-ware-sale-amazon.jpg" class="deal-image" alt=""> -->
+             <a href="https://www.flipkart.com/" class="deal-a">  starting from “₹” 899</a>
+           </div>
+    </div>
+
+</div>
+
+<footer>
+    <h5>@copyright</h5>
+</footer>
+
+<script src="ecommerce.js"></script>
+</body>
+</html>
